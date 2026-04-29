@@ -1,0 +1,8 @@
+{
+  "name": "canteen-system",
+  "private": true,
+  "scripts": {
+    "all": "powershell -NoProfile -ExecutionPolicy Bypass -File .\\start-ngrok.ps1",
+    "ngrok": "npm run all"
+  }
+}

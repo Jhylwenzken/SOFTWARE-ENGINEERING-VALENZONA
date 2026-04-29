@@ -1,0 +1,6 @@
+node_modules/
+canteen.db
+canteen.db-journal
+canteen.db-wal
+canteen.db-shm
+.env
