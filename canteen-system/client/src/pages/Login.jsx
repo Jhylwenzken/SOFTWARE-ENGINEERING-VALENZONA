@@ -84,13 +84,13 @@ export default function Login() {
           </CardContent>
         </Card>
 
-        {/* <Paper variant="outlined" sx={{ mt: 2, p: 2 }}>
+        <Paper variant="outlined" sx={{ mt: 2, p: 2 }}>
           <Typography variant="subtitle2" gutterBottom>Demo Credentials</Typography>
           <Typography variant="body2" component="div" sx={{ fontFamily: "monospace" }}>
             Admin: admin / admin<br />
             Staff: staff / staff123
           </Typography>
-        </Paper> */}
+        </Paper>
       </Box>
     </Box>
   );
