@@ -18,8 +18,8 @@ seedIfEmpty();
 const app = express();
 const PORT = process.env.PORT || 3001;
 const isProduction = process.env.NODE_ENV === "production";
-
 const corsOrigin = process.env.CORS_ORIGIN || "http://localhost:5173";
+
 app.use(cors({
   origin: corsOrigin.split(","),
   credentials: true,
@@ -81,6 +81,19 @@ app.use((err, req, res, next) => {
 
 // Print routes then start server
 listRoutes();
-app.listen(PORT, "0.0.0.0", () => {
-  console.log(`API server listening on port ${PORT}`);
+const HOST = process.env.HOST || "localhost";
+const server = app.listen(PORT, HOST, () => {
+  console.log(`API server listening on http://${HOST}:${PORT}`);
+});
+
+server.on("error", (err) => {
+  if (err.code === "EADDRINUSE") {
+    console.error(`\n ERROR: Port ${PORT} is already in use.\n`);
+    console.error(`  Another server process may still be running.`);
+    console.error(`  Fix: Open Task Manager, find node.exe, and end the process.`);
+    console.error(`  Or run in PowerShell: Stop-Process -Id (Get-NetTCPConnection -LocalPort ${PORT}).OwningProcess -Force\n`);
+  } else {
+    console.error("Server error:", err);
+  }
+  process.exit(1);
 });
