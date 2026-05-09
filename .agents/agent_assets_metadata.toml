@@ -1,0 +1,26 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "s8Z5P_-gN_Svookh5nBUk"
+uri = "file://canteen-system/client/public/menu/water.png"
+type = "image"
+title = "bottled water"
+
+[[generated]]
+id = "kD77EMKM5T0W8PRAA7slf"
+uri = "file://canteen-system/client/public/menu/iced-tea.png"
+type = "image"
+title = "iced tea glass"
+
+[[generated]]
+id = "-C67L0m7mrzPC7T6GyJGR"
+uri = "file://canteen-system/client/public/menu/calamansi-juice.png"
+type = "image"
+title = "calamansi juice"
+
+[[generated]]
+id = "99UGYHS1H3l4-MgnnWtbG"
+uri = "file://canteen-system/client/public/menu/turon.png"
+type = "image"
+title = "turon banana roll"

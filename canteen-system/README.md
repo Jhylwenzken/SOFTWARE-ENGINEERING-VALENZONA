@@ -60,13 +60,13 @@ npm run dev
 ```
 On first run the database `canteen.db` is created and seeded with sample users, menu items, orders, and stock data.
 
-**Terminal 2 — Client (port 5173):**
+**Terminal 2 — Client (port 5000):**
 ```
 cd client
 npm run dev
 ```
 
-Open http://localhost:5173 in your browser. The Vite dev server proxies `/api/*` calls to the backend on port 3001.
+Open http://localhost:5000 in your browser. The Vite dev server proxies `/api/*` calls to the backend on port 3001.
 
 ## Default Login Credentials
 
@@ -127,5 +127,5 @@ Stop the server, delete `server/canteen.db` (and any `*-journal`, `*-wal`, `*-sh
 
 - **`SyntaxError: Unknown module 'node:sqlite'`** — Your Node is too old. Upgrade to v22.5+ (LTS recommended).
 - **`ExperimentalWarning: SQLite is an experimental feature`** — This is expected and harmless on Node 22/23/24.
-- **Port already in use** — Another process is on 3001 or 5173. Stop it, or change the port in `server/src/index.js` / `client/vite.config.js`.
+- **Port already in use** — Another process is on 3001 or 5000. Stop it, or change the port in `server/src/index.js` / `client/vite.config.js`.
 - **Login does nothing** — Make sure the server terminal shows `API server listening on port 3001` before logging in. Check the browser DevTools Network tab for the `/api/auth/login` request.

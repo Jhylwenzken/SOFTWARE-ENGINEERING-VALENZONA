@@ -23,10 +23,10 @@ export function seedIfEmpty() {
     { name: "Halo-Halo", desc: "Mixed sweet beans, fruits, leche flan, and shaved ice.", price: 80, cat: "Dessert", stock: 25, img: "/menu/halo-halo.png" },
     { name: "Garlic Fried Rice", desc: "Sinangag — fragrant garlic rice.", price: 30, cat: "Side", stock: 80, img: "/menu/fried-rice.png" },
     { name: "Banana Cue", desc: "Caramelized fried saba banana on a stick.", price: 20, cat: "Snack", stock: 4, img: "/menu/banana-cue.png" },
-    { name: "Bottled Water", desc: "500ml mineral water.", price: 15, cat: "Beverage", stock: 60, img: null },
-    { name: "Iced Tea", desc: "House-brewed lemon iced tea.", price: 25, cat: "Beverage", stock: 45, img: null },
-    { name: "Calamansi Juice", desc: "Fresh-squeezed Filipino lime juice.", price: 25, cat: "Beverage", stock: 30, img: null },
-    { name: "Turon", desc: "Fried banana spring roll with brown sugar.", price: 18, cat: "Dessert", stock: 40, img: null },
+    { name: "Bottled Water", desc: "500ml mineral water.", price: 15, cat: "Beverage", stock: 60, img: "/menu/water.png" },
+    { name: "Iced Tea", desc: "House-brewed lemon iced tea.", price: 25, cat: "Beverage", stock: 45, img: "/menu/iced-tea.png" },
+    { name: "Calamansi Juice", desc: "Fresh-squeezed Filipino lime juice.", price: 25, cat: "Beverage", stock: 30, img: "/menu/calamansi-juice.png" },
+    { name: "Turon", desc: "Fried banana spring roll with brown sugar.", price: 18, cat: "Dessert", stock: 40, img: "/menu/turon.png" },
   ];
 
   const insertItem = db.prepare(

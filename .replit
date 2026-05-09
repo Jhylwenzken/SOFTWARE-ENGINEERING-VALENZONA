@@ -54,6 +54,10 @@ externalPort = 3001
 localPort = 5000
 externalPort = 80
 
+[[ports]]
+localPort = 5173
+externalPort = 5173
+
 [deployment]
 deploymentTarget = "vm"
 run = ["bash", "-c", "cd /home/runner/workspace/canteen-system/server && node --experimental-sqlite src/index.js & sleep 2 && cd /home/runner/workspace/canteen-system/client && npx serve dist --listen 5000"]
